@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Navigation from './components/Navigation';
 import GrievanceForm from './components/GrievanceForm';
 import Footer from './components/Footer';
+import Chatbot from './components/ChatBot';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           </div>
         </div>
       </main>
+      <Chatbot />
       <Footer />
     </div>
   );
