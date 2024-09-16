@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 function Navigation() {
-  const [activeIndex, setActiveIndex] = useState(null);
+  const [activeIndex, setActiveIndex] = useState(0);  // Set to 0 for "Train" by default
 
   const navItems = [
     { icon: '🚂', label: 'Train' },
@@ -13,11 +13,11 @@ function Navigation() {
   ];
 
   const handleClick = (index) => {
-    setActiveIndex(index === activeIndex ? null : index);
+    setActiveIndex(index);
   };
 
   return (
-    <nav className="bg-gray-100 p-4 w-1/4">
+    <nav className="bg-gray-100 p-4 w-1/4 my-2">
       <ul className="space-y-4">
         {navItems.map((item, index) => (
           <li 

@@ -8,9 +8,11 @@ function App() {
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
-      <main className="flex-grow flex">
-        <Navigation />
-        <GrievanceForm />
+      <main className="flex-grow flex justify-center w-full">
+        <div className='w-full md:w-[80%] flex'>
+          <Navigation />
+          <GrievanceForm />
+        </div>
       </main>
       <Footer />
     </div>
