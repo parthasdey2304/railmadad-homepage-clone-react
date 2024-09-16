@@ -29,7 +29,7 @@ function GrievanceForm() {
   };
 
   return (
-    <div className="w-3/4 px-4 py-6">
+    <div className="w-[95%] md:w-3/4 px-4 py-6">
       <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
         <h2 className="text-2xl font-bold mb-4 text-purple-800">Grievance Detail</h2>
         

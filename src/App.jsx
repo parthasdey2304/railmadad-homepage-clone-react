@@ -9,9 +9,11 @@ function App() {
     <div className="min-h-screen flex flex-col">
       <Header />
       <main className="flex-grow flex justify-center w-full">
-        <div className='w-full md:w-[80%] flex'>
+        <div className='w-full md:w-[80%] flex flex-col md:flex-row items-center md:items-start'>
           <Navigation />
-          <GrievanceForm />
+          <div className="w-full md:w-3/4 flex justify-center">
+            <GrievanceForm />
+          </div>
         </div>
       </main>
       <Footer />
